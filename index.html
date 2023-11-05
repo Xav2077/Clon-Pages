@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas estilos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <header>
+            <div class="logo">Karazuno</div>
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Gallery</a></li>
+                <li><a>Character</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <h2>Hinata shouyou.</h2>
+            <p class="wing">Wing Spike</p>
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aut sint dolore quam veniam, earum accusamus a voluptate voluptas quasi obcaecati nam sunt explicabo? Mollitia a debitis sequi explicabo 
+                cumque.
+            </p>
+            <div class="niveles">
+                <div class="lorem">
+                    <p>Lorem</p>
+                <div class="linea uno"></div>
+                </div> 
+                <div class="lorem">
+                    <p>Lorem</p>
+                    <div class="linea dos"></div>
+                </div>
+                <div class="lorem">
+                    <p>Lorem</p>
+                    <div class="linea tres"></div>
+                </div>
+                <div class="lorem">
+                    <p>Lorem</p>
+                    <div class="linea cuatro"></div>
+                </div>
+                <div class="lorem">
+                    <p>Lorem</p>
+                    <div class="linea cinco"></div>
+                </div>
+                <div class="lorem">
+                    <p>Lorem</p>
+                    <div class="linea seis"></div>
+                </div>
+            </div>
+        </main>
+        <div class="luffy">
+            <img src="img/luffy-gear5.png" alt="picture">
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="circle">
+            <div class="text">
+                <p>The Mandalorian - From the series of HBO -</p>
+            </div> 
+        </div>
+
+        <!-- <img src="img/mandalorian.png" alt="mandalorian"> -->
+        <div class="manda">
+            <div class="puntuacion">
+                <div>tv series</div>
+                <div>
+                    <p>IMDb</p>
+                    <p>9.1</p>
+                </div>
+            </div>
+            <img src="img/titulo.png" alt="mandaloriano">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum provident quod nobis consequatur id 
+                velit!
+            </p>
+            <div class="botones">
+                <button>watch now</button>
+                <button>trailer</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec3">
+        <h4>Charmeleon</h4>
+        <P>
+            <span>ポケットモンスター</span>
+        </P>
+        <img src="img/charmander.png" alt="el pana charmelon">
+        <div class="lista">
+            <p>Lorem.</p>
+            <p>Lorem.</p>
+        </div> 
+        <div id="vertical">Lorem ipsum dolor sit.</div>
+    </section>
+
+    <section class="sec4">
+        <div class="header2">
+            <img src="img/tent-fill.png" alt="log">
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Explore</a></li>
+                <li><a>News</a></li>
+                <li><a>Context</a></li>
+            </ul>
+            <div id="loginnregister">
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+        </div>
+
+        <div class="txt">
+            <p id="puno">Dive Club.</p><br>
+            <p id="pdos">Explore the world</p>
+            <div id="ptres">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum consectetur reiciendis aut exercitationem, odio ex natus ratione aliquid asperiores doloribus aliquam sed aspernatur itaque in ea nobis fugiat! Esse perferendis et mollitia odit. Velit, voluptatum ab incidunt quos quasi aspernatur hic magnam soluta illum 
+                    quas?
+                </p>
+            </div>
+        </div>
+
+        <div class="underwater">
+            <p>underwater.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, fugit quia veniam assumenda delectus laborum iusto harum earum consectetur labore? Unde excepturi adipisci odio 
+                rem.
+            </p>
+        </div>
+
+        <div class="tipos">
+            <div class="cuadro">
+                <img src="img/andromeda">
+                <p>Lorem.</p>
+            </div>
+            <div class="cuadro">
+                <img src="img/enana blanca.jpg">
+                <p>Lorem.</p>
+            </div>
+            <div class="cuadro">
+                <img src="img/estrella.avif">
+                <p>Lorem.</p>
+            </div>
+        </div>
+
+        <div id="view">
+            <a>VIEW ALL PICTURES ></a>
+        </div> 
+
+        <div class="foot">
+            <div>
+                &copy;2023 Jaime Garcia. All rights reserved
+            </div>
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Explore</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script>
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split('').map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+    ).join('');
+    
+    var h1 = document.createElement('p');
+ 
+    if ( !( 'webkitTextStroke' in h1.style ) ) {
+    
+    var heading = document.getElementsByTagName('h1')[0];
+    
+    heading.style.color = 'black';
+    
+    }
+    </script>
+</body>
+</html>
